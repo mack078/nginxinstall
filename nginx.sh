@@ -10,11 +10,10 @@ sudo make
 sudo make install 
 sudo ldconfig
 sudo sh -c "echo /usr/local/lib  >> /etc/ld.so.conf.d/local.conf"
-sudo cd /
+cd /root/
 sudo git clone https://github.com/mack078/ngx_http_geoip2_module
 sudo mv ngx_http_geoip2_module /usr/local/src/
-sudo cd /
-sudo cd /nginx-1.17.3
+sudo cd /root/nginx-1.17.3
 sudo ./configure --prefix=/usr/local/nginx --with-http_ssl_module --with-http_realip_module  --with-http_stub_status_module  --add-module=/usr/local/src/ngx_http_geoip2_module/
 sudo make
 sudo make install
@@ -64,7 +63,7 @@ http {
     }
     include /usr/local/nginx/vhosts/*.conf;
 }"  > /usr/local/nginx/conf/nginx.conf
-sudo cd /
+sudo cd /root
 wget https://github.com/mack078/nginx.conf/blob/master/GeoLite2-City.mmdb
 wget https://github.com/mack078/nginx.conf/blob/master/GeoLite2-Country.mmdb
 sudo mkdir /usr/local/Geoip2/
