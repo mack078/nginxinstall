@@ -8,7 +8,7 @@ cd ~/libmaxminddb-1.3.2
 ./configure
 make    
 make install 
-ldconfig
+/libmaxminddb-1.3.2/ldconfig
 sh -c "echo /usr/local/lib  >> /etc/ld.so.conf.d/local.conf"
 cd 
 git clone https://github.com/leev/ngx_http_geoip2_module.git
