@@ -14,7 +14,7 @@ git clone https://github.com/leev/ngx_http_geoip2_module.git
 mv ngx_http_geoip2_module /usr/local/src/
 mkdir /usr/local/Geoip2/
 cd ~/nginx-1.17.3
-./configure --prefix=/usr/local/nginx --with-http_ssl_module --with-http_realip_module  --with-http_stub_status_module  --add-module=/usr/local/src/ngx_http_geoip2_module/
+./configure --prefix=/usr/local/nginx --with-http_ssl_module --with-http_realip_module  --with-http_stub_status_module --with-stream  --add-module=/usr/local/src/ngx_http_geoip2_module/
 make
 make install
 rm -rf  /usr/local/nginx/conf/nginx.conf
