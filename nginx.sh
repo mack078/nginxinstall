@@ -29,6 +29,6 @@ chkconfig /usr/local/nginx/sbin/nginx
 firewall-cmd --zone=public --add-port=80/tcp --permanent
 firewall-cmd --zone=public --add-port=443/tcp --permanent
 firewall-cmd --zone=public --add-port=8080/tcp --permanent
-firewall-cmd --add-rich-rule="rule family="ipv4" source address="61.220.250.0/24" service name="ssh" accept" --permanent
+firewall-cmd --add-rich-rule="rule family="ipv4" source address="61.219.218.0/24" service name="ssh" accept" --permanent
 ln /usr/local/nginx/sbin/nginx /usr/local/bin/nginx
 /sbin/ldconfig
