@@ -1,10 +1,9 @@
 #!/bin/bash
 
-# 安装必要的依赖
-yum install -y gcc gcc-c++ make libtool zlib zlib-devel pcre pcre-devel openssl openssl-devel wget vim unzip git lrzsz
+
 
 # 获取 Nginx 最新版本
-latest_version=$(curl -s http://nginx.org/en/download.html | grep -oP 'nginx-\K([0-9]+\.[0-9]+\.[0-9]+)')
+latest_version=nginx-1.26.0.tar.gz
 
 # 下载最新的 Nginx
 wget -q http://nginx.org/download/nginx-${latest_version}.tar.gz
