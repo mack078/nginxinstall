@@ -6,11 +6,11 @@
 latest_version=nginx-1.26.0.tar.gz
 
 # 下载最新的 Nginx
-wget -q http://nginx.org/download/nginx-${latest_version}.tar.gz
+wget -q http://nginx.org/download/nginx-nginx-1.26.0.tar.gz
 wget -q https://github.com/maxmind/libmaxminddb/releases/download/1.3.2/libmaxminddb-1.3.2.tar.gz
 
 # 解压 tar 文件
-tar -zxf nginx-${latest_version}.tar.gz
+tar -zxf nginx-nginx-1.26.0.tar.gz
 tar -xf libmaxminddb-1.3.2.tar.gz
 
 # 安装 libmaxminddb
